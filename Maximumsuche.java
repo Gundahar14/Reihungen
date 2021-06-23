@@ -150,16 +150,14 @@ public class Maximumsuche extends PApplet
      *
      * @return index des Maximums
      */
-    public int maximumsuche() {
-        // ------------------------------------------------------------------------------
-        // ToDO: Implementiere die Maximumsuche, füge nach jeder Veränderung der
-        //       Position des aktuellen Elements oder der Position des momentanen Maximums
-        //       die Befehle: redraw(); und delay(verzoegerung); ein.
-        //       Als Ergebnis soll die Methode die Position des Maximums zurückgeben
-        //       Kommentiere die Maximumsuche
-        // ------------------------------------------------------------------------------
-        //<>//
-        return -1;
+    public int maximumsuche(int[] zahlen) {
+       int index_max = 0;
+       
+       //for schleife
+       for(int i =1;i< zahlen.length;i++){
+           if(zahlen[i]>zahlen[index_max]) index_max = i;
+        }
+       return index_max;
     }
 
     /**
